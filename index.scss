@@ -2,51 +2,28 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.ql-container {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.ql-clipboard {
-  display: none;
-}
 
 .ql-edit-field {
-  &:focus {
-    outline: none;
-    border: 1px dashed #0078e791;
-  }
-
-  .ql-editor {
     border: 1px dashed #CCCCCC80;
     padding: 3px 5px;
     &:focus {
       outline: none;
       border: 1px dashed #0078e791;
     }
-  }
-
-  p {
-    padding: 0;
-    margin: 0;
-    &:focus {
-      outline: none;
-
-    }
-  }
 }
 
-  h1.ql-edit-field, h1.ql-edit-field .ql-editor {
+  h1.ql-edit-field {
     font-size: 24px;
     line-height: 48px;
     margin: 20px 0;
-    padding: 0;
+    padding: 0 10px;
   }
 
-  p.ql-edit-field, p.ql-edit-field .ql-editor {
+  p.ql-edit-field {
     font-size: 16px;
     line-height: 26px;
     margin: 20px 0;
-    padding: 0;
+    padding: 5px 10px;
 
     &.b, &.strong {
       font-width: 700;

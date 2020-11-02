@@ -1,0 +1,97 @@
+$color-border: #FFF;
+$color-toolbar-border: #a9a9a9;
+$color-toolbar-shadow: #e8e8e8;
+$color-button-inside-border: #dcdcdc;
+$color-front: #000;
+$color-front2: rgba(146, 146, 146, 0.8);
+$color-background-active: #FFF;
+$color-background-hover: #FEFEFE;
+
+.medium-toolbar-arrow-under:after {
+  top: 60px;
+  border-color: $color-border transparent transparent transparent;
+}
+
+.medium-toolbar-arrow-over:before {
+  top: -8px;
+  border-color: transparent transparent $color-border transparent;
+}
+
+.medium-editor-toolbar {
+  background-color: $color-border;
+  border: 1px solid $color-toolbar-border;
+  box-shadow: 1px 1px 2px $color-toolbar-shadow;
+  border-radius: 4px;
+
+  li {
+    padding: 0;
+
+    button {
+      min-width: 42px;
+      padding: 12px;
+      border: none;
+      border-right: 1px solid $color-button-inside-border;
+      background-color: transparent;
+      color: $color-front;
+      -webkit-transition: background-color .2s ease-in, color .2s ease-in;
+      transition: background-color .2s ease-in, color .2s ease-in;
+
+      &:hover {
+        background-color: $color-background-hover;
+        color: $color-front;
+      }
+    }
+
+    .medium-editor-button-active {
+      background-color: $color-background-active;
+      color: $color-front;
+    }
+
+    .medium-editor-button-last {
+      border-right: none;
+    }
+  }
+}
+
+.medium-editor-toolbar-form {
+  .medium-editor-toolbar-input {
+    height: 60px;
+    background: $color-border;
+    color: $color-front;
+
+    &::-webkit-input-placeholder {
+      color: $color-front;
+      color: $color-front2;
+    }
+
+    &:-moz-placeholder {
+      /* Firefox 18- */
+      color: $color-front;
+      color: $color-front2;
+    }
+
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $color-front;
+      color: $color-front2;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color-front;
+      color: $color-front2;
+    }
+
+    a {
+      color: $color-front;
+    }
+  }
+}
+
+.medium-editor-toolbar-anchor-preview {
+  background: $color-border;
+  color: $color-front;
+}
+
+.medium-editor-placeholder:after {
+  color: $color-button-inside-border;
+}
